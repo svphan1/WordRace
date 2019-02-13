@@ -11,10 +11,14 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Paytone+One|Montserrat"
+      rel="stylesheet"
+    />
   </head>
 
-  <body class="text-white ">
+  <body class="text-white">
     <header class="text-center p-3 mb-5">
       <h1>WordRace</h1>
     </header>
@@ -26,11 +30,11 @@
             Type The Given Word Within
             <span class="text-success" id="seconds">5</span> Seconds:
           </p>
-          <h2 class="display-2 mb-5" id="current-word">hello</h2>
+          <h2 class="display-2 mb-5 word" id="current-word">hello</h2>
           <input
             type="text"
             class="form-control form-control-lg"
-            placeholder="Start typing..."
+            placeholder="Type the word above to being..."
             id="word-input"
             autofocus
           />
@@ -38,16 +42,22 @@
 
           <!-- Time & Score Columns -->
           <div class="row mt-5">
-            <div class="col-md-6">
+            <div class="col-md-4">
               <h3>
-                Time Left:
-                <span id="time">0</span>
+                Countdown:
+                <span class="number" id="time">0</span>
               </h3>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <h3>
                 Score:
-                <span id="score">0</span>
+                <span class="number" id="score">0</span>
+              </h3>
+            </div>
+            <div class="col-md-4">
+              <h3>
+                High Score:
+                <span class="number" id="score">0</span>
               </h3>
             </div>
           </div>

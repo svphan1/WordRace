@@ -1,3 +1,21 @@
 body {
   background-color: rgb(21, 25, 32) !important;
+  font-family: "Paytone One", Helvetica, sans-serif !important;
+}
+
+#word-input {
+  border-radius: 4rem !important;
+  font-family: "Montserrat", Helvetica, sans-serif;
+}
+
+.word {
+  font-size: 3rem !important;
+}
+
+h3 {
+  font-family: "Montserrat", Helvetica, sans-serif;
+}
+
+.number {
+  font-family: "Paytone One", Helvetica, sans-serif !important;
 }
