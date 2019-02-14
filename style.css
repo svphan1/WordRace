@@ -3,8 +3,16 @@ body {
   font-family: "Paytone One", Helvetica, sans-serif !important;
 }
 
+header {
+  letter-spacing: 5px !important; 
+}
+
 #word-input {
   border-radius: 4rem !important;
+  font-family: "Montserrat", Helvetica, sans-serif;
+}
+
+.lead {
   font-family: "Montserrat", Helvetica, sans-serif;
 }
 
