@@ -43,14 +43,31 @@ const words = [
 
 // Initialize game
 function init() {
-  // Load word from array
   showWord(words);
+  setInterval(countdown, 1000); 
+  setInterval(checkStatus, 50);
 }
 
 //Pick & show random word
 function showWord(words) {
-  // Generate random array index
   const randomIndex = Math.floor(Math.random() * words.length);
-  // Output random word
   currentWord.innerHTML = words[randomIndex]
+}
+
+// Countdown timer  
+function countdown() {
+  // Make sure time is does not run out
+  if(time > 0) {
+    time--;
+  } else if(time === 0) {
+    isPlaying = false;
+  }
+  timeDisplay.innerHTML = time;
+}
+
+//Check game status
+function checkStatus() {
+  if(!isPlaying && time === 0) {
+    message.innerHTML = 'Game Over!';
+  }
 }
